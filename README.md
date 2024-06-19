@@ -1,31 +1,32 @@
-# React + TypeScript + Vite
+# Marketplace de Cartas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Marketplace de Cartas** é uma aplicação web onde os usuários podem trocar cartas de forma simples e eficiente. Desenvolvido com React, TypeScript, e Tailwind CSS, o projeto utiliza a API pública [Cards Marketplace API](https://cards-marketplace-api.onrender.com/) para gerenciar usuários, cartas e trocas.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Registro e Login**: Permite que os usuários se registrem e façam login.
+- **Gerenciamento de Cartas**: Os usuários podem adicionar cartas à sua coleção.
+- **Criação de Trocas**: Usuários podem criar solicitações de troca, especificando quais cartas oferecem e quais desejam receber.
+- **Visualização de Trocas**: Todos os usuários podem visualizar trocas abertas no marketplace.
+- **Gerenciamento de Perfil**: Visualização e atualização de informações do usuário.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**:
 
-- Configure the top-level `parserOptions` property like this:
+  - React 18
+  - TypeScript
+  - React Router DOM v6
+  - Tailwind CSS
+  - React Query
+  - Material-UI (para componentes)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Backend**: [Cards Marketplace API](https://cards-marketplace-api.onrender.com/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# card-marketplace
+## Instalação
+
+1. **Clone o Repositório**:
+   ```bash
+   git clone https:https://github.com/britofranciane/card-marketplace
+   cd card-marketplace
+   ```
